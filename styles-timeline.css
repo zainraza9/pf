@@ -1,0 +1,215 @@
+/* Timeline Section Styling */
+.timeline-section {
+    padding: 10px 20px;
+    background: #000; /* Pure black background */
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff; /* Default white text for the section */
+}
+
+.timeline-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #00D646; /* White heading */
+    position: relative;
+}
+
+.timeline-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #00D646; /* Kept blue accent for contrast */
+}
+
+/* Timeline Container */
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Vertical Line */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #00D646; /* Blue timeline line */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Timeline Items */
+.timeline-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 70px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-out;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Timeline Content */
+.timeline-content {
+    position: relative;
+    width: calc(45% - 10px);
+    padding: 25px;
+    background: #111; /* Dark gray content background */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* White glow effect */
+    z-index: 2;
+    border: 1px solid #333; /* Subtle border */
+    color: #eee; /* Light gray text */
+}
+
+/* Timeline Content Arrow */
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    border: 8px solid transparent;
+    border-left-color: #111; /* Match content background */
+    z-index: 1;
+}
+
+/* Even Items (Right Side) */
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    right: auto;
+    left: -15px;
+    border-left-color: transparent;
+    border-right-color: #111; /* Match content background */
+}
+
+/* Timeline Dot */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #00D646; /* Blue dot */
+    border: 4px solid #000; /* Black border */
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* Timeline Content Styling */
+.timeline-content h3 {
+    margin: 0 0 10px;
+    color: #00D646; /* Blue accent */
+    font-size: 1.3rem;
+}
+
+.timeline-content h4 {
+    margin: 0 0 5px;
+    color: #fff; /* White heading */
+    font-size: 1.5rem;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    color: #ccc; /* Light gray text */
+    font-size: 1rem;
+}
+
+.timeline-content .description {
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #ddd; /* Lighter gray */
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline-container::before {
+        left: 20px;
+    }
+    
+    .timeline-content {
+        width: calc(90% - 80px);
+        margin-left: 60px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 60px;
+    }
+    
+    .timeline-content::before {
+        left: -15px;
+        right: auto;
+        border-left-color: transparent;
+        border-right-color: #111; /* Match content background */
+    }
+    
+    .timeline-item::after {
+        left: 20px;
+    }
+    
+    .timeline-section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Animation for Timeline Dot */
+@keyframes pulse {
+    0% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.1); }
+    100% { transform: translateX(-50%) scale(1); }
+}
+
+.timeline-item.visible::after {
+    animation: pulse 1.5s infinite;
+}
+
+@media (max-width: 480px) {
+    .timeline-content {
+        width: calc(90% - 50px);
+        margin-left: 40px;
+        padding: 15px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 40px;
+    }
+    
+    .timeline-container::before {
+        left: 15px;
+    }
+    
+    .timeline-item::after {
+        left: 15px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+}

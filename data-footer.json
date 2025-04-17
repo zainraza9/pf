@@ -1,0 +1,26 @@
+{
+    "contactText": "Feel free to reach out to discuss collaboration opportunities or for any inquiries.",
+    "socialLinks": [
+        {
+            "name": "GitHub",
+            "icon": "github",
+            "url": "https://github.com"
+        },
+        {
+            "name": "LinkedIn",
+            "icon": "linkedin",
+            "url": "https://linkedin.com"
+        },
+        {
+            "name": "Twitter",
+            "icon": "twitter",
+            "url": "https://twitter.com"
+        },
+        {
+            "name": "Email",
+            "icon": "email",
+            "url": "mailto:contact@example.com"
+        }
+    ],
+    "copyright": "© Copyright ZainRaza 2025 All Rights Reserved"
+}

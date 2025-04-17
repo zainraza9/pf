@@ -1,0 +1,18 @@
+{
+    "developer": {
+        "name": "ZAIN RAZA",
+        "designation": "Game Developer & Unity Engineer",
+        "intro": "An enthusiastic Game Engineer, driven by a passion for contributing to proven success through diligence, meticulous attention to detail, and outstanding organizational skills. Eager to embrace opportunities for learning, personal growth, and advancement within the industry, and eager to enhance your team's value.",
+
+        "profilePic": "images/profile.jpg",
+        "logo": "images/logo.png",
+        "resumeUrl": "downloadable/zainR-cv.pdf"
+    },
+    "navLinks": [
+        {"name": "Home", "id": "home"},
+        {"name": "Projects", "id": "tag-filters"},
+        {"name": "Skills", "id": "skills"},
+        {"name": "Experience", "id": "ts"},
+        {"name": "Contact", "id": "contactF"}
+    ]
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Posts with Tags</title>
+  <!-- In HTML <head> -->
+	
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles-common.css" />
+  <link rel="stylesheet" href="styles-timeline.css" />
+  <link rel="stylesheet" href="styles-skills.css" />
+  <link rel="stylesheet" href="styles-header.css" />
+  <link rel="stylesheet" href="styles-footer.css" />
+</head>
+<body>
+
+ 
+
+
+<main>
+
+
+    
+<!-- Add this where you want the skills section to appear -->
+<section id="skills" class="timeline-section">
+  <!-- <div class="container"> -->
+    <h2>Skills</h2>
+    <div class="skills-container" id="skills-container">
+      <!-- Skills will be inserted here by JavaScript -->
+    </div>
+  <!-- </div> -->
+</section>
+
+<div class="just-space"></div>
+
+<section id="ts" class="timeline-section">
+    <h2>Experience Timeline</h2>
+    <div class="timeline-container"></div>
+</section>
+
+  <header>
+    <h1>Video Posts</h1>
+    <div id="tag-filters" class="tag-grid"></div>
+  </header>
+
+  </main>
+
+<footer id="contactF" class="footer_container">
+    <!-- Your footer content -->
+</footer>
+  
+  <script src="script-timeline.js"></script>
+  <script src="script-skills.js"></script>
+  <script src="script-header.js"></script>
+  <script src="script-footer.js"></script>
+</body>
+</html>

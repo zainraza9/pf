@@ -1,0 +1,11 @@
+body {
+    background-color: #272727; /* or any color you like */
+    margin: 0; /* optional: removes default spacing */
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+  }
+
+  .just-space 
+  {
+    padding: 60px 20px;
+  }

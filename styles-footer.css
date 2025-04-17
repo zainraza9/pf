@@ -1,0 +1,77 @@
+/* Footer Variables */
+:root {
+    --footer-bg: #000000;
+    --footer-text: #00D646;
+    --footer-secondary-text: #b3b3b3;
+    --footer-accent: #00D646;
+    --footer-transition: 0.3s;
+}
+
+/* Footer Container */
+.footer_container {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 1.5rem 5%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+	font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.footer_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem; /* Added horizontal padding */
+}
+
+.footer_heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--footer-text);
+}
+
+.footer_text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--footer-secondary-text);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.footer_socials {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer_social-link {
+    display: inline-block;
+    transition: transform var(--footer-transition);
+}
+
+.footer_social-icon {
+    width: 36px;
+    height: 36px;
+    transition: all var(--footer-transition);
+    filter: brightness(0) invert(1); /* Makes SVG white by default */
+}
+
+.footer_social-link:hover .footer_social-icon {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(90%) saturate(1000%) hue-rotate(200deg);
+}
+
+.footer_copyright {
+    color: var(--footer-secondary-text);
+    font-size: 0.9rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #333;
+    width: 100%;
+}
