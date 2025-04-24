@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dynamic Posts with Tags</title>
+  <title>ZR PORTFOLIO</title>
   <!-- In HTML <head> -->
 	
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="styles-header.css" />
   <link rel="stylesheet" href="styles-common.css" />
   <link rel="stylesheet" href="styles-timeline.css" />
   <link rel="stylesheet" href="styles-skills.css" />
-  <link rel="stylesheet" href="styles-header.css" />
+  <link rel="stylesheet" href="styles-projects.css" />
   <link rel="stylesheet" href="styles-footer.css" />
 </head>
 <body>
@@ -27,7 +28,16 @@
 <section id="skills" class="timeline-section">
   <!-- <div class="container"> -->
     <h2>Skills</h2>
-    <div class="skills-container" id="skills-container">
+    <!-- <div class="skills-container" id="skills-container"> -->
+      
+      <section class="skillZ_section">
+        <div id="skillZ_container"></div>
+      </section>
+    
+      <!-- <section id="skillZ_section">
+        <div id="skillZ_container"></div>
+      </section> -->
+
       <!-- Skills will be inserted here by JavaScript -->
     </div>
   <!-- </div> -->
@@ -40,10 +50,23 @@
     <div class="timeline-container"></div>
 </section>
 
-  <header>
-    <h1>Video Posts</h1>
-    <div id="tag-filters" class="tag-grid"></div>
-  </header>
+  
+
+<!-- <section id="ts2" class="timeline-section">
+  <h2>PROJECTS AND DEMOS</h2>
+</section> -->
+
+  <!--main id="proVids_posts-container"></main-->
+  <!-- proVids Section -->
+  <section id="proVids-section" class="proVids_body">
+    <header class="proVids_header">
+      <h1>PROJECTS AND DEMOS</h1>
+      <div id="proVids_tag-filters" class="proVids_tag-grid"></div>
+    </header>
+
+    <div id="proVids_posts-container"></div>
+  </section>
+
 
   </main>
 
@@ -51,9 +74,11 @@
     <!-- Your footer content -->
 </footer>
   
+  
+  <script src="script-header.js"></script>
   <script src="script-timeline.js"></script>
   <script src="script-skills.js"></script>
-  <script src="script-header.js"></script>
+  <script src="script-projects.js"></script>
   <script src="script-footer.js"></script>
 </body>
 </html>

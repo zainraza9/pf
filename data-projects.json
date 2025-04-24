@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Dissolve Shader with Ramp Options",
+    "text": "A customizable dissolve shader for 3D models, using mask textures to control disintegration patterns with adjustable edge colors, HDR glow, and dynamic width for seamless transitions—ideal for stylized destruction or visual effects.",
+    "videoUrl": "https://www.youtube.com/embed/1WnNoVdvoF0?enablejsapi=1&mute=1",
+    "tags": ["Shaders"],
+    "imageUrl": "images/project1.jpg"
+    
+  },
+  {
+    "title": "Water Sort Game Editor Levels",
+    "text": "A custom editor window for managing levels in a Color Sorting Game, enabling visualization, editing, and batch operations (add/delete/modify bottles and colors) per level—streamlining the creation of 150+ puzzles with real-time previews.",
+    "videoUrl": "https://www.youtube.com/embed/Blm8DPBd6Y0?enablejsapi=1&mute=1",
+    "tags": ["UnityEditor"]
+  },
+  {
+    "title": "Rope Hero Game Open World",
+    "text": "Developed an open-world mobile game with destructible environments, drivable vehicles, and interactive NPCs. Created 3 mission types with tiered enemy AI and faction warfare. Implemented superhero abilities like lasers and rope physics, optimized for mobile performance.",
+    "videoUrl": "",
+    "tags": ["Game"],
+    "imageUrl": "images/project1.jpg"
+  }
+]

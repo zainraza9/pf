@@ -1,104 +1,119 @@
-/* Skills Section Styles */
-.skills-section {
-  background-color: #000;
+.skillZ_section {
+  background: #000;
   color: #fff;
-  padding: 10px 20px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
   font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
-
-.skills_heading2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: var(--footer-text);
+#skillZ_container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;  /* THIS is the fix: stack vertically */
+  gap: 18px;
 }
 
-
-.skills-section h1 
-{
-  color: #fff;
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.skills-section h2 {
-  color: #00D646;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-}
-
-.skill-item {
+.skillZ_row {
   display: flex;
   align-items: center;
-  margin: 0 auto 20px auto;
-  gap: 15px;
-  max-width: 45%;
+  justify-content: center;
+  width: 100%;
   
+
 }
 
-.skill-name {
-  min-width: 100px;
-  color: #fff;
+.skillZ_name {
+  width: 25%;
   font-size: 1.1rem;
-  text-transform: uppercase;
-  text-align: right
+  text-align: right;
+  white-space: nowrap;
+
+  padding-right: 15px;
 }
 
-.skill-bar-container {
-  flex-grow: 1;
-  max-width: 100%;
-  margin: 0 auto;
+.skillZ_percentage {
+  width: 25%;
+  font-size: 1.1rem;
+  text-align: left;
+  white-space: nowrap;
+
+
+  padding-left: 15px;
+}
+
+.skillZ_barWrapper {
+  width: 50%;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  justify-content: center;
+
 }
 
-.skill-bar {
-  height: 12px;
+.skillZ_barBg {
+  width: 100%;
+  height: 14px;
   background-color: #333;
-  border-radius: 6px;
+  border-radius: 7px;
   overflow: hidden;
-  flex-grow: 1;
 }
 
-.skill-progress {
+.skillZ_barFill {
   height: 100%;
-  background: linear-gradient(90deg, #00b83d, #00D646);
-  width: 0;
-  border-radius: 6px;
-  transition: width 1.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  background: #00D646;
+  border-radius: 7px 0 0 7px;
+  width: 0%;
+  transition: width 1.2s ease-in-out;
 }
 
-.skill-percentage {
-  min-width: 40px;
-  color: #fff;
-  font-size: 1.1rem;
-}
+/* Optional: Responsive stacking at small screens */
+/* Desktop: keep flat row (no need to change anything) */
 
-/* Special styling for 100% skill */
-.skill-progress[data-percent="100"] {
-  background: linear-gradient(90deg, #00D646, #00D646);
-  box-shadow: 0 0 10px rgba(255, 235, 59, 0.5);
-}
-
+/* Mobile (≤600px): switch to 2 rows per skill */
 @media (max-width: 800px) {
-  .skill-item {
-      max-width: 100%;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 5px;
+  .skillZ_row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
   }
-  
-  .skill-name {
-      text-align: left;
-      min-width: auto;
-      width: 100%;
+
+  .skillZ_name,
+  .skillZ_percentage {
+    width: auto;
+    font-size: 0.95rem;
+    padding: 0;
   }
-  
-  .skill-bar-container {
-      width: 100%;
+
+  /* Top row: name left, percentage right */
+  .skillZ_row::before {
+    content: '';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .skillZ_row > .skillZ_name,
+  .skillZ_row > .skillZ_percentage {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .skillZ_name {
+    text-align: left;
+  }
+
+  .skillZ_percentage {
+    text-align: right;
+  }
+
+  .skillZ_barWrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skillZ_barBg {
+    width: 100%;
   }
 }

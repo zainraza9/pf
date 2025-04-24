@@ -2,7 +2,8 @@
     "developer": {
         "name": "ZAIN RAZA",
         "designation": "Game Developer & Unity Engineer",
-        "intro": "An enthusiastic Game Engineer, driven by a passion for contributing to proven success through diligence, meticulous attention to detail, and outstanding organizational skills. Eager to embrace opportunities for learning, personal growth, and advancement within the industry, and eager to enhance your team's value.",
+        "introOld": "An enthusiastic Game Engineer, driven by a passion for contributing to proven success through diligence, meticulous attention to detail, and outstanding organizational skills. Eager to embrace opportunities for learning, personal growth, and advancement within the industry, and eager to enhance your team's value.",
+        "intro": "An enthusiastic Unity Engineer and Game Developer with over 8 years of hands-on experience building immersive, high-performance games and XR simulations. I specialize in gameplay programming, shader development, and editor tooling that empowers teams to work smarter. With a passion for problem-solving and visual storytelling, I thrive in fast-paced environments where creativity meets technical challenge. Let’s create something amazing.",
 
         "profilePic": "images/profile.jpg",
         "logo": "images/logo.png",

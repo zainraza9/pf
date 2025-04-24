@@ -1,0 +1,143 @@
+/* Main container styles */
+.proVids_body {
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  margin: 0;
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+/* Post container */
+.proVids_post {
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto 30px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.proVids_post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.proVids_post h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #00D646;
+}
+
+
+/* Content area */
+.proVids_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proVids_content p {
+  flex: 1 1 calc(50% - 10px);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.proVids_content iframe {
+  flex: 1 1 calc(50% - 10px);
+  height: 350px;
+  border: none;
+  border-radius: 12px;
+  min-width: 300px;
+}
+
+/* Header and tags */
+.proVids_header {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  z-index: 100;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+  font-size: 1.5rem;
+  color:#00D646;
+}
+
+.proVids_tag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.proVids_tag-grid button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.proVids_tag-grid button:hover {
+  background-color: #666;
+  
+}
+
+.proVids_tag-grid button.proVids_active {
+  background-color: #00D646;
+  color: #000;
+}
+
+
+/* Add these new styles to your existing CSS */
+.proVids_image {
+  flex: 1 1 calc(50% - 10px);
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  background-color: #333;
+}
+
+/* Update the video style to match images */
+.proVids_video {
+  flex: 1 1 calc(50% - 10px);
+  height: 300px;
+  border: none;
+  border-radius: 12px;
+  min-width: 300px;
+  background-color: #333;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .proVids_post {
+      width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .proVids_post {
+      width: 90%;
+  }
+
+  .proVids_content p,
+  .proVids_content iframe {
+      flex: 1 1 100%;
+  }
+}

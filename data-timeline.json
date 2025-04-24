@@ -1,28 +1,35 @@
 {
     "timelineEntries": [
         {
-            "role": "Frontend Developer",
-            "company": "Tech Innovators Inc",
-            "date": "2022 - Present",
-            "description": "Leading frontend development team in creating responsive web applications using React and TypeScript. Implemented CI/CD pipelines and improved page load performance by 40%."
+            "role": "Unity Engineer",
+            "company": "TNodes",
+            "date": "2023 - Present",
+            "description": "Developed systems for an open-world game using plugin-based architecture, created Unity Editor tools (NPC/Vehicle generators) and shaders for faster iteration, and built scalable templates for casual/hyper-casual games."
         },
         {
-            "role": "Full Stack Engineer",
-            "company": "Digital Solutions Co",
-            "date": "2020 - 2022",
-            "description": "Developed and maintained enterprise-level applications using Node.js and React. Integrated AWS services and reduced server costs by 25% through optimization."
+            "role": "Game Developer",
+            "company": "Game District",
+            "date": "2021 - 2022",
+            "description": "Designed simulation games (racing/fighting) and shipped 5+ hyper-casual titles (100+ levels) using custom Unity tools, while leading KPI-focused prototyping to boost retention and playtime."
         },
         {
-            "role": "Junior Developer",
-            "company": "Startup Studio",
+            "role": "Unity XR Developer",
+            "company": "Powersoft19",
+            "date": "2019 - 2021",
+            "description": "Optimized high-poly 3D models, developed custom LODs and editor tools, created mechanical/electrical simulations, and delivered AR/VR training solutions across Unity pipelines (URP/HDRP)."
+        },
+        {
+            "role": "Game Developer",
+            "company": "The Gaminators Group (OZI Group)",
             "date": "2018 - 2020",
-            "description": "Contributed to MVP development for various startups. Worked with Python/Django stack and assisted in deployment processes using Docker."
+            "description": "Developed AA 3D games, built a modular third-person shooter controller for Unity, and created reusable game flow templates to accelerate production."        
         },
+
         {
-            "role": "Junior2 Developer",
-            "company": "Startup Studio",
-            "date": "2018 - 2020",
-            "description": "Contributed to MVP development for various startups. Worked with Python/Django stack and assisted in deployment processes using Docker."
+            "role": "Game Developer",
+            "company": "Tech Skippers (MindBotix)",
+            "date": "2015 - 2017",
+            "description": "Developed arcade/2D games, 3D simulations, and AI systems for racing games (cars/bikes)."        
         }
     ]
 }
