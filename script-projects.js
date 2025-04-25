@@ -48,20 +48,31 @@ function proVids_renderTags() {
 
 function proVids_handleVideos() {
     const iframes = document.querySelectorAll(".proVids_video");
-    iframes.forEach(iframe => {
-        iframe.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":[]}', '*');
-    });
+    
+    // Mobile: Pause all videos initially
+    if (window.innerWidth <= 768) {
+        iframes.forEach(iframe => {
+            iframe.setAttribute('allow', '');
+            iframe.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":[]}', '*');
+        });
+    }
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             const iframe = entry.target;
             const command = entry.isIntersecting ? "playVideo" : "pauseVideo";
-            iframe.contentWindow?.postMessage(`{"event":"command","func":"${command}","args":[]}`, '*');
+            // Only autoplay on desktop
+            if (window.innerWidth > 768 || command === "pauseVideo") {
+                iframe.contentWindow?.postMessage(`{"event":"command","func":"${command}","args":[]}`, '*');
+            }
         });
-    }, { threshold: 0.6 });
+    }, { 
+        threshold: window.innerWidth <= 768 ? 0.1 : 0.6 
+    });
 
     iframes.forEach(iframe => observer.observe(iframe));
 }
+
 
 fetch("data-projects.json")
     .then(res => res.json())
